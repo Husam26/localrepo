@@ -1,0 +1,164 @@
+div{
+    height: 100px;
+    width: 100px;
+    border: 2px solid black;
+    display: inline-block;
+    transition-property: all;
+    transition-duration: 2s;
+    transition-timing-function: ease-in;
+    transition-delay: 0.5s;
+}
+#container{
+    height:300px;
+    width: 1000px;
+    border:3px solid black ;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly ;
+    flex-wrap:wrap;
+    align-items: center;
+    align-content: start;
+}
+/* in default the flex direction is in row format we can use row-reverse,column,column-reverse */
+#box1{
+    background-color:gray;
+    animation-name: box1;
+    animation-duration: 3s;
+    animation-timing-function: ease-in;
+    animation-delay: 0.5s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+}
+#box2{
+    background-color:rgba(17, 157, 208, 0.623);
+    animation-name: box1;
+    animation-duration: 3s;
+    animation-timing-function: ease-in;
+    animation-delay: 3s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+}
+#box3{
+    background-color:rgba(207, 41, 201, 0.888);
+    animation-name: box1;
+    animation-duration: 3s;
+    animation-timing-function: ease-in;
+    animation-delay: 6s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+}
+#box4{
+    background-color:rgb(222, 135, 68);
+    animation-name: box1;
+    animation-duration: 3s;
+    animation-timing-function: ease-in;
+    animation-delay: 9s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+}
+#box5{
+    background-color:rgb(159, 168, 64);
+    animation-name: box1;
+    animation-duration: 3s;
+    animation-timing-function: ease-in;
+    animation-delay: 12s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+}
+.parent{
+    height: 400px;
+    width: 400px;
+    background-color: rgb(58, 51, 51);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation-name: rotateanimate;
+    animation-duration: 5s;
+    animation-timing-function: ease-in;
+    animation-delay: 0.5s;
+    animation-iteration-count: 5;
+    animation-direction: normal;
+    animation-direction: alternate;
+}
+.child{
+    height: 100px;
+    width: 100px;
+    background-color: rgb(194, 53, 159);
+    animation-name: rotatechild;
+    animation-duration: 5s;
+    animation-timing-function: ease-in;
+    animation-delay: 0.5s;
+    animation-iteration-count: 5;
+    animation-direction: normal;
+    animation-direction: alternate;
+}
+@media (max-width: 600px) {
+    .child{
+        background-color: cornflowerblue;
+    }
+}
+@media (min-width: 200px) and (max-width: 300px){
+    .parent{
+        background-color: darkblue;
+    }
+}
+.parent:active {
+    background-color: burlywood;
+    transform: translate(1000px) rotate(360deg);
+    
+}
+.child:hover {
+    font-size: 20px;
+    transform: rotate(360deg);
+}
+#box1:active{
+    background-color: azure;
+    transform: scale(2);
+}
+#box2:active{
+    background-color: azure;
+    transform: scale(2,1);
+}
+#box3:active{
+    transform: translate(30px,20px);
+}
+#box4:active{
+    transform: skew(90deg);
+}
+@keyframes rotateanimate {
+    from{background-color: burlywood;
+        transform: translate(0px) rotate(0deg);} to { background-color: brown; transform: translate(1000px) rotate(360deg);}
+}
+/* animation can also be writeen in 0,50,100% form */
+@keyframes rotatechild {
+    from{background-color: rgb(194, 53, 159);
+        transform: rotate(0deg);} to { background-color: rgb(194, 53, 159); transform:rotate(360deg);}   
+}
+@keyframes box1{
+    from{transform: translate(0px,0px);} to {transform: translate(0px,180px);}
+}
+@keyframes box2{
+    from{transform: translate(0px,0px);} to {transform: translate(0px,180px);}
+}
+@keyframes box3{
+    from{transform: translate(0px,0px);} to {transform: translate(0px,180px);}
+}
+@keyframes box4{
+    from{transform: translate(0px,0px);} to {transform: translate(0px,180px);}
+}
+@keyframes box5{
+    from{transform: translate(0px,0px);} to {transform: translate(0px,180px);}
+}
+#loader{
+    border: 10px solid brown;
+    border-left: 10px solid black;
+    border-radius: 50%;
+    animation-name: loader;
+    animation-duration: 2s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+}
+@keyframes loader{
+    from {transform: rotate(0deg);} to {transform: rotate(360deg);}
+}

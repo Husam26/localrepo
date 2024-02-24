@@ -1,3 +1,163 @@
-p{
-    color:brown ;
+/* ctrl / is used to comment out ant tet in vs code */
+h1{
+    color: rgb(116, 223, 231);
+    text-align: center;
+    text-decoration:rgb(236, 171, 171) solid underline;
 }
+h3{
+    color: rgb(255, 174, 0);
+    text-decoration: rgb(228, 155, 155) underline;
+    font-weight: bold;
+}
+button{
+     color: rgb(113, 100, 203);
+     background-color: rgb(229, 212, 190);
+     border:5px solid rgb(65, 55, 55);
+     /* (width,style,color */
+      
+}
+body{
+    background-color:rgb(154, 105, 105);
+}
+h2{
+    color: rgb(83, 82, 82);
+    text-align: center;
+}
+#one{
+    color: aliceblue;
+    text-align: left;
+    font-size: 25px;
+}
+#two{
+    color: aliceblue;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    line-height: 30px;
+    text-transform: capitalize;
+}
+/* height,width can also be set according to our convenience */
+#block1{
+    color:whitesmoke;
+    text-transform: capitalize;
+    height: 100px;
+    width: 100px;
+    background-color:rgb(98, 143, 225,0.5); 
+    /* opacity=strength of power */
+    border-width:3px;
+    border-style: solid;
+    border-color: black;
+    text-align: center;
+    border-radius: 7px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-top: 25px;
+    display: block;
+}  
+#block2{
+    color:whitesmoke;
+    text-transform: capitalize;
+    height: 100px;
+    width: 100px;
+    background-color:cornflowerblue;
+    border-width:3px;
+    border-style: solid;
+    border-color: black;
+    text-align: center;
+    border-radius: 50%;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 10px;
+    margin-top: 25px;
+    display: inline-block;
+
+}
+/* Padding:50px,then top,right,bottom,left will be alloted with 50px of padding */
+/* padding:1px 2px 3px 4px(top,right,bottom,left) */
+/* and same for margins */
+#Navbar{
+    height: 60px;
+    background-color: black;
+    color: white;
+    text-transform: capitalize;
+}
+#logo{
+    color: #f08804;
+    font-size: 25px;
+    text-transform: none;
+    cursor: pointer;
+}
+#navbutton{
+    background-color: #f08804;
+    border: 2px;
+}
+a{
+    margin-right: 200px;
+    color: white;
+}
+/* dispaly:inline or block can be used where block element takes the space more than required and inline takes only the required space and in inline-block we can apply padding and margins adn for none it disaapears */
+#footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+#box1{
+    height: 100px;
+    width: 100px;
+    background-color: cadetblue;
+    display: inline-block;
+    border: 3px solid black;
+    position: static;
+    z-index:2;
+}
+#box2{
+    height: 100px;
+    width: 100px;
+    background-color: cadetblue;
+    display: inline-block;
+    border: 3px solid black;
+    position: relative;
+    top:10px; 
+    left:-20px;
+    z-index:-2;
+}
+#box3{
+    height: 100px;
+    width: 100px;
+    background-color: cadetblue;
+    display: inline-block;
+    border: 3px solid black; 
+    position: absolute;
+    top: 110px;
+    right: 2px;   
+}
+#box4{
+    height: 100px;
+    width: 100px;
+    background-color: cadetblue;
+    display: inline-block;
+    border: 3px solid black;
+    position: fixed;
+    top:0;
+    right: 2px;    
+    background-image: url("mountain.jpg");
+    background-size: cover;
+}
+
+/* absolute position=postioned relative to the ancestor or parent tag closest to it */
+/* fixed posotion=it is not positioned relative to the browserr and sticky also can be used*/
+/* z-index deals with the overlapping */
+#NATURE{
+    height: 100px;
+    width: 100px;
+    color: azure;
+    background-image: url("photo.avif");
+    background-size: cover;
+}
+#a{
+    background-color: grey;
+    border-width: 2px;
+    border-color: black;
+    border-style: solid;
+}
+
